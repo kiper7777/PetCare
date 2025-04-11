@@ -1,0 +1,521 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f8f4;
+   }
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    box-shadow: 0 0 10px rgba(243, 2, 2, 0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header h1 a{
+    margin: 0;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.auth_buttons{
+    display: flex;
+    gap: 10px;
+}
+.auth_buttons button {
+    border: 1px solid white;
+    background-color: #4CAF50;
+    color: white;
+    font-weight: 600;
+    border-radius: 6px;
+    padding: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.auth_buttons a{
+    text-decoration: none;
+    color: white;
+}
+.her{
+    background: url('image/dog1.jpg');
+    /* background-size: 1700px 900px; */
+
+    background-size: cover; /* изображение будет покрывать весь экран */
+    background-attachment: fixed; /* картинка не будет прокручиваться при скроллинге */
+    background-repeat: no-repeat;
+    margin: 0; /* убирает отступы по умолчанию */
+
+    height: 700px;
+    display: flex;
+    color: white;
+}
+
+.her_become{
+    background: url('image/dog3.jpg');
+    background-size: cover; 
+    background-attachment: fixed; 
+    background-repeat: no-repeat;
+    margin: 0; 
+    height: 900px;
+    color: white;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.her_become_content{
+    text-align: center; 
+    max-width: 80%; 
+    gap: 20px;
+}
+
+.her_become h1{
+    font-size: 36px;
+}
+
+.her_become p{
+    font-size: 20px;
+}
+
+.her_become button{
+    border-radius: 20px;
+    border: none;
+    background-color:#0073e6;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.her_become_content button a{
+    color: white;
+    text-decoration: none;
+}
+
+.her_become button:hover{
+    background-color:#3981c8;
+   
+}
+/* #hero {
+    background: url('/image/dog1.jpg');
+    background-size: 1700px 900px;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    padding: 100px 20px;
+    justify-content: center;
+    text-align: center;
+    height: 500px;
+} */
+
+#hero h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+    font-family:cursive;
+    width: 76%;
+}
+
+.hero_container{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+  }
+
+#hero form {
+    display: flex;
+   
+}
+
+#hero input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+/* #hero button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+} */
+
+#services {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#services .services-grid {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+#services .service {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+}
+
+#about, #contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact input, #contact textarea {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* .burger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.burger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #3A2A06;
+    transition: all 0.3s ease;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+} */
+
+/* *** signup page *** */
+
+.signup {
+    display: flex;
+    justify-content: center;
+}
+
+.signup h2 {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-size: 32px;
+    font-weight: 400;
+    color: #5a5858;
+}
+
+.signup-form {
+    display: grid;
+    align-content: flex-start;
+    width: 500px;
+    height: auto;
+    border: 1px solid rgb(53, 142, 55);
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 70px;
+    box-shadow: 0 0 10px rgba(164, 0, 93, 0.1);
+    margin-bottom: 130px;
+}
+
+.signup-form label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #5a5858;
+    margin-top: 14px;
+    margin-bottom: 28px;
+}
+
+.signup-form input {
+    border: 1px solid rgb(188, 185, 185);
+    border-radius: 6px;
+    padding: 8px;
+    margin-bottom: 14px;
+    width: 100%;
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box;
+  }
+
+.signup-form input:focus {
+    border-color: #86b58c;
+}
+.signup-form button {
+    background-color: #50805e;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    border-radius: 8px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding: 6px;
+    width: auto;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.signup-form button:hover {
+    background-color: white;
+    color: #50805e;
+    border: 2px solid #50805e;
+    cursor: pointer;
+}
+.signup-form .link{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+.signup-form .link a:hover{
+    background-color: white;
+    color: blue;
+    cursor: pointer;
+}
+
+.message .error {
+    font-size: 100px;
+    height: 16px;
+    margin-top: 6px;
+    display: none;
+}
+
+/* .error {
+    color: red;
+    font-size: 16px;
+    height: 6px;
+    display: block;
+    margin-bottom: 12px;
+} */
+ 
+/* .signup-form .message {
+    color: gray;
+    display: none;
+} */
+
+.user_info .message {
+    color: gray;
+    display: none;
+}
+
+.error {
+    color: red;
+}
+
+ /* ******** search block ********* */
+
+ .search-box {
+    background: #e0d6d5b5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 680px;
+    margin: 154px auto;
+}
+
+.search-box h2,
+h3 {
+    font-size: 16px;
+    color: rgb(74, 74, 74);
+    margin-bottom: 10px;
+}
+
+.search-box_header {
+    display: flex;
+    align-items: baseline;
+}
+
+.pet-selection label {
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+.service-options_block {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.service-options_for {
+    display: block;
+}
+
+.service-options {
+    display: flex;
+    margin: 10px 0;
+    gap: 12px;
+}
+
+.service-btn {
+    width: 118px;
+    height: 70px;
+    border: 2px solid #ccc;
+    background: white;
+    color: rgb(105, 105, 105);
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* .service-btn.active {
+    border: 2px solid #373737;
+    color: #373737;
+    font-weight: 600;
+} */
+
+.block {
+    display: flex;
+    gap: 12px;
+}
+
+.block label {
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(74, 74, 74);
+    margin-bottom: 6px;
+}
+
+.block_address,
+.block_date {
+    margin: 10px 0;
+    display: grid;
+}
+
+.block_address input,
+.block_date input {
+    width: 200px;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.size-options {
+    display: flex;
+    margin: 10px 0;
+    gap: 16px;
+}
+
+.size-options .size-btn {
+    color: rgb(105, 105, 105);
+}
+
+.size-btn {
+    width: 100px;
+    height: 70px;
+    background: white;
+    border: 2px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.search-btn {
+    width: 210px;
+    height: 70px;
+    background: #0073e6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+ /* ******** search sitters ********* */
+.search_sitters{
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.search_block{
+    padding: 10px;
+    border: 1px solid rgb(223, 220, 220);
+    border-radius: 10px;
+    height: 100%;
+}
+
+/* .search_service{} */
+
+.search_block2, .search_block3{
+    width: 1200px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.search_block2 img, .search_block3 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
